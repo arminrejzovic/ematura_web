@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eMatura | Home</title>
+    <link href="Reset.css" type="text/css" rel="stylesheet">
+    <link href="index-style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="./images/app-logo.png">
+    <script src="Index-Script.js"></script>
+</head>
+<body>
+
+<header>
+    <a class="nav-link" href="#">Prijava</a>
+    <a class="nav-link" href="#mobile-app">Mobilna Aplikacija</a>
+    <a href="#"><img src="images/app-logo.png" alt="logo" id="app-logo"></a>
+    <a class="nav-link" href="#about-project">O projektu</a>
+    <a class="nav-link" href="#contact">Kontaktirajte nas</a>
+</header>
+
+
+<div id="wrapper">
+    <div id="form-wrapper">
+        <form action="form-validator.php" method="post">
+            <h2>Prijava</h2>
+            <input type="text" id="username" name="username" placeholder="Korisničko ime: " style="background: transparent" required>
+            <input type="password" id="password" name="password" placeholder="Šifra: " required>
+            <input type="submit" name="submit" id="login">
+            <img src="images/info.png" alt="info">
+            <span>Ako prvi put posjećujete stranicu, jednostavno unesite bilo koje korisničko ime
+        i šifru i Vaš profil će automatski biti kreiran!</span>
+        </form>
+
+        <div id="guest-div">
+
+            <h2>Prijavi se preko: </h2>
+            <div id="social-media">
+                <img src="images/facebook.png" alt="fb">
+                <img src="images/googleapp.png" alt="fb">
+                <img src="images/instagram.png" alt="fb">
+            </div>
+
+            <h1>Ne želiš profil?</h1>
+            <button type="button" id="play-as-guest" onclick=playAsGuest()>Igraj Kao Gost!</button>
+        </div>
+    </div>
+</div>
+<div id="mobile-app">
+    <div class="content-wrapper">
+        <div id="description">
+            <h1>Preuzmi eMatura aplikaciju i uči u pokretu!</h1>
+            <p>Naša aplikacija je dostupna na Google Play trgovini, potpuno besplatna i bez reklama. Preuzmite aplikaciju
+                klikom na link ispod.</p>
+            <img src="images/google-play-badge.png" id="play-store-button" onclick="openPlayStore()" alt="gpb">
+        </div>
+        <img src="images/Index-images/banner-final.png" alt="banner" id="banner">
+    </div>
+</div>
+
+<div id="about-project">
+    <div class="content-wrapper" id="about-wrapper">
+        <div id="desc">
+            <h1>O projektu eMatura</h1>
+            <p>Ova aplikacija je nastala kako bi gimnazijalcima olakšala pripremu za maturski ispit koji ih čeka na kraju
+                školovanja. Svi testovi unutar aplikacije su preuzeti sa znvanične stranice Pedagoškog zavoda Tuzlanskog
+                kantona. Aplikacija sadrži oko 1100 pitanja iz svih predmeta koji se izučavaju tokom četverogodišnje opšte
+                gimnazije. Nakon uspjeha sa mobilnom aplikacijom, odlučili smo naš program proširiti i na Web plaformu, 
+                kako bi još više korisnika imalo pristup programu. Nadamo se da će vam biti od pomoći i želimo vam puno 
+                sreće na maturskom ispitu!</p>
+        </div>
+        <img src="images/Index-images/eMaturaDesktop.png" id="desktop" alt="desctop">
+    </div>
+</div>
+
+<div id="contact">
+    <div class="content-wrapper" id="contact-wrapper">
+        <div id="contact-desc">
+            <h1>Kontaktirajte nas!</h1>
+            <p>Vaša povratna informacija nam je izuzetno važna. Putem formulara nam pošaljite bilo kakvu poruku, a mi
+            ćemo se potruditi da što prije odgovorimo. Za poslovnu saradju, kontaktirajte rejzovicarmin@gmail.com direktno.</p>
+        </div>
+        <form>
+            <input type="text" id="name" placeholder="Vaše ime: " style="background: transparent" required>
+            <input type="text" id="subject" placeholder="Svrha: " style="background: transparent" required>
+            <textarea id="message" placeholder="Poruka:"></textarea>
+            <input type="submit" id="submit-form">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

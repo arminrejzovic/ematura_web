@@ -1,0 +1,94 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Trebuchet MS",sans-serif;
+    overflow-x: hidden;
+}
+
+ul{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+}
+
+li{
+    margin-bottom: 2vh;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+#red-bar{
+    width: 100vw;
+    height: 100vh;
+    background: tomato;
+}
+#yellow-bar{
+    width: 100vw;
+    height: 100vh;
+    background: orange;
+}
+#green-bar{
+    width: 100vw;
+    height: 100vh;
+    background: greenyellow;
+}
+
+.card{
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+}
+
+.content-descriptor{
+    text-align: center;
+    padding: 33vh 2vw 2vw;
+}
+
+#izn-picture{
+    background: url("images/stock/studying3.jpg") no-repeat;
+    background-size: cover;
+}
+
+#ppp-picture{
+    background: url("images/stock/studying1.jpg") no-repeat;
+    background-size: cover;
+}
+
+#toz-picture{
+    background: url("images/stock/studying2.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+
+
+h1{
+    font-variant: small-caps;
+}
+
+i{
+    display: block;
+    color: black;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+button{
+    background-color: transparent;
+    font-variant: small-caps;
+    margin-top: 20px;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}

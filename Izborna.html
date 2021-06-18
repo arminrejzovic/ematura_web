@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eMatura | Izborna Nastava</title>
+    <link rel="stylesheet" href="pojedinacno-style.css">
+    <link rel="icon" href="images/icons/appicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="title">
+    <img id="icon" src="images/icons/appicon.png" alt="app">
+    <span id="title-span">Izborna Nastava</span>
+</div>
+
+<div id="container">
+    <div class="subject">
+        <img src="images/icons/biology%20color.png" alt="biologija">
+        <a href="#">Biologija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/philosophy.png" alt="filozofija">
+        <a href="#">Filozofija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/physics%20color.png" alt="fizika">
+        <a href="#">Fizika</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/geography%20color.png" alt="geografija">
+        <a href="#">Geografija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/chemistry%20color.png" alt="hemija">
+        <a href="#">Hemija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/history%20color.png" alt="historija">
+        <a href="#">Historija</a>
+    </div>
+</div>
+
+<script>
+    $('.subject').click(function(){
+        window.location.href = 'Izborna-Ispit.html' + '#' + jQuery(this).children("a").text();
+    });
+</script>
+</body>
+</html>

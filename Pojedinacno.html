@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eMatura | Pojedinacno Po Predmetima</title>
+    <link rel="stylesheet" href="pojedinacno-style.css">
+    <link rel="icon" href="images/icons/appicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Script.js"></script>
+</head>
+<body>
+
+<div id="title">
+    <img id="icon" src="images/icons/appicon.png" alt="app">
+    <span>Pojedinačno po predmetima</span>
+</div>
+
+<div id="container">
+    <div class="subject">
+        <img src="images/icons/biology%20color.png" alt="biologija">
+        <a href="#">Biologija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/bosnian%20color.png" alt="bosanski">
+        <a href="#">Bosanski</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/democracy%20color.png" alt="demokratija">
+        <a href="#">Demokratija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/english%20color.png" alt="engleski">
+        <a href="#">Engleski</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/philosophy.png" alt="filozofija">
+        <a href="#">Filozofija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/physics%20color.png" alt="fizika">
+        <a href="#">Fizika</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/geography%20color.png" alt="geografija">
+        <a href="#">Geografija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/chemistry%20color.png" alt="hemija">
+        <a href="#">Hemija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/history%20color.png" alt="historija">
+        <a href="#">Historija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/computer%20color.png" alt="informatika">
+        <a href="#">Informatika</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/latin%20color.png" alt="latinski">
+        <a href="#">Latinski</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/art%20color.png" alt="likovno">
+        <a href="#">Likovno</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/logic%20color.png" alt="logika">
+        <a href="#">Logika</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/math.png" alt="matematika">
+        <a href="#">Matematika</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/music%20color.png" alt="muzičko">
+        <a href="#">Muzičko</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/germany%20color.png" alt="njemački">
+        <a href="#">Njemački</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/psychology%20color.png" alt="psihologija">
+        <a href="#">Psihologija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/sociology%20color.png" alt="sociologija">
+        <a href="#">Sociologija</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/sport%20color.png" alt="fizičko">
+        <a href="#">Tjelesni</a>
+    </div>
+    <div class="subject">
+        <img src="images/icons/religion.png" alt="vjeronauka">
+        <a href="#">Vjeronauka</a>
+    </div>
+</div>
+
+<script>
+    $('.subject').click(function(){
+        window.location.href = 'Pojedinacno-Ispit.html' + '#' + jQuery(this).children("a").text();
+    });
+</script>
+</body>
+</html>

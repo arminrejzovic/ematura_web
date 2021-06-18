@@ -1,0 +1,268 @@
+/* RESET */
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*VARIABLES*/
+
+:root{
+    --background : url("images/themes/navy.png") no-repeat fixed center;
+    --mainColor: white;
+}
+
+body{
+    font-family: "Trebuchet MS",sans-serif;
+    background: var(--background);
+}
+
+#app-logo{
+    width: 7vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-link{
+    display: inline;
+    padding: 10px;
+    font-variant: small-caps;
+    color: var(--mainColor);
+    text-decoration: none;
+    font-size: 1.2em;
+    height: 4vh;
+}
+
+.active{
+    border: 2px solid lightseagreen;
+    border-radius: 30px;
+}
+
+.nav-link:hover{
+    color: lightseagreen;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+    text-align: center;
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    background: var(--background);
+    position: sticky;
+}
+
+/*Login*/
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10vh;
+}
+
+#form-wrapper{
+    width: 50vw;
+    height: 60vh;
+    background-color: white;
+    color: darkblue;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+}
+
+#guest-div{
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 1vw;
+}
+#guest-div h2{
+    font-variant: small-caps;
+}
+
+form{
+    padding: 1vw;
+    color: darkblue;
+}
+form input{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    height: 10%;
+    padding: 5px;
+    border-radius: 20px;
+    outline: none;
+}
+
+#login,#submit-form{
+    background-color: lightseagreen;
+    font-variant: small-caps;
+    border: 0;
+    margin-bottom: 25%;
+    color: white;
+    cursor: pointer;
+}
+
+form img{
+    vertical-align: middle;
+    height: 1.5em;
+}
+
+#social-media{
+    padding: 1vw;
+}
+
+#social-media img{
+    margin: 5px;
+    cursor: pointer;
+    height: 3em;
+}
+
+#play-as-guest{
+    background-color: transparent;
+    font-variant: small-caps;
+    margin-top: 20px;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+/*MOBILE APP*/
+
+#mobile-app, #contact, #about-project{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 25vh;
+}
+
+.content-wrapper{
+    width: 70%;
+    height: 75%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 20px;
+}
+
+#banner{
+    height: 100%;
+    width: 60%;
+    margin: auto;
+}
+
+#description,#desc{
+    padding: 2vw;
+}
+
+#description h1,#contact h1{
+    font-size: 6vh;
+    margin-bottom: 2vh;
+}
+
+#about-wrapper{
+   height: 90%;
+}
+
+#desktop{
+    width: 70%;
+    margin: auto;
+}
+
+#desc h1{
+    margin-bottom: 2vh;
+}
+#desc p,#contact p{
+    line-height: 1.8;
+}
+
+#play-store-button{
+    margin-top: 2vh;
+    width: 40%;
+    cursor: pointer;
+}
+
+#contact-wrapper{
+    padding: 2vw;
+}
+
+textarea{
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+    padding: 1vh;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    header{
+        height: 25vh;
+    }
+
+    #wrapper{
+        padding: 0;
+    }
+    #app-logo{
+        width: 7vw;
+        margin: 10px auto auto;
+    }
+
+    .nav-link{
+        display: block;
+        padding: 10px;
+        font-variant: small-caps;
+        color: var(--mainColor);
+        text-decoration: none;
+        font-size: 1.2em;
+        height: 4vh;
+    }
+
+    #form-wrapper{
+        width: 90vw;
+        height: 60vh;
+        background-color: white;
+        color: darkblue;
+        display: block;
+        margin: 10vh auto;
+    }
+
+    #guest-div{
+        padding-top: 10vh;
+        height: 50vh;
+    }
+    form input{
+        height: 6vh;
+    }
+
+    #mobile-wrapper{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        background: white;
+        box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+
+    #banner{
+        width: 100%;
+        margin: auto;
+    }
+
+    #about-wrapper{
+       width: 90%;
+    }
+    .content-wrapper{
+        display: block;
+        width: 90%;
+        height: auto;
+        padding: 2vw;
+    }
+}

@@ -1,0 +1,101 @@
+body{
+    font-family: "Trebuchet MS",sans-serif;
+    background: url("images/themes/navy.png");
+}
+
+header{
+    height: 15vh;
+    width: 100%;
+    padding-left: 5vw;
+}
+
+header img{
+    height: 80%;
+    vertical-align: middle;
+}
+
+header h2{
+    display: inline;
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+}
+
+#wrapper{
+    width: 50vw;
+    height: 80vh;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+}
+
+#question{
+    width: 100%;
+    height: 25vh;
+    padding: 5px;
+    border: 2px solid gray;
+}
+
+#answers p, #next{
+    width: 100%;
+    height: 8vh;
+    padding: 5px;
+    margin-top: 2vh;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+#next{
+    background-color: lightseagreen;
+    font-variant: small-caps;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+
+#report{
+    width: 30vw;
+    height: 60vh;
+    background: white;
+    padding: 1vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -30vh;
+    margin-left: -15vw;
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    visibility: hidden;
+}
+
+#report img{
+    width: 100%;
+    height: 40%;
+}
+
+#report h3{
+    margin-top: 2vh;
+    font-variant: small-caps;
+    color: darkblue;
+}
+
+#report button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 4vh;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    border-radius: 20px;
+    background: darkblue;
+    color: white;
+    outline: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #wrapper{
+        width: 90vw;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eMatura | Meni</title>
+    <link href="Reset.css" type="text/css" rel="stylesheet">
+    <link href="menustyle.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="./images/app-logo.png">
+    <script src="Menu-Script.js"></script>
+</head>
+<body>
+
+<ul>
+    <li><a href="#red-bar">⬤</a></li>
+    <li><a href="#yellow-bar">⬤</a></li>
+    <li><a href="#green-bar">⬤</a></li>
+</ul>
+
+<div id="red-bar">
+    <div class="card">
+        <div class="content-descriptor">
+            <h1>Test Općeg Znanja</h1>
+            <i>100 pitanja iz 18 različitih predmeta, baš kao na pravom ispitu</i>
+            <button type="button" onclick=openTOZ()>Počni Test</button>
+        </div>
+
+        <div class="picture" id="toz-picture">
+            <div id="overlay-toz"></div>
+        </div>
+    </div>
+</div>
+
+
+<div id="yellow-bar">
+    <div class="card">
+        <div class="middle-picture" id="ppp-picture">
+            <div id="overlay-ppp"></div>
+        </div>
+
+        <div class="content-descriptor">
+            <h1>Pojedinačno Po Predmetima</h1>
+            <i>Vježbajte predmet po izboru i usavršite znanje</i>
+            <button type="button" onclick=openPPP()>Počni Test</button>
+        </div>
+    </div>
+</div>
+
+<div id="green-bar">
+    <div class="card">
+        <div class="content-descriptor">
+            <h1>Izborna Nastava</h1>
+            <i>Pripremite se i za testiranje iz izborne nastave!</i>
+            <button type="button" onclick=openIZN()>Počni Test</button>
+        </div>
+
+        <div class="picture" id="izn-picture">
+            <div id="overlay-izn"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

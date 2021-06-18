@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --textcolor: white;
+    --theme: url("images/themes/navy.png");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-image: var(--theme);
+    background-size: cover;
+    color: var(--textcolor);
+    font-size: 62.5%;
+}
+
+#icon{
+    height: 80px;
+    vertical-align: middle;
+}
+
+#title span{
+    font-size: 3.6em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#user{
+    float: right;
+    height: 40px;
+    margin: 10px;
+}
+
+#title{
+    height: 150px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+#container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-gap: 20px;
+}
+
+.subject{
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    box-shadow: 5px 5px gray;
+}
+
+.subject a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.subject a:hover{
+    text-decoration: underline;
+}
+
+.progressBar{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: gray;
+    height: 15px;
+}
+
+.progress{
+    background-color: limegreen;
+    text-align: center;
+    font-size: 12px;
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    color: white;
+}
+
+.subject img{
+    height: 100px;
+}
+
+.subject:hover{
+    box-shadow: 5px 5px 5px whitesmoke;
+}
