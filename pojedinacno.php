@@ -164,7 +164,7 @@ foreach ($_POST as $post){
 
         default:
             array_push($QuestionList,$post);
-            array_push($QuestionList,"MIREL");
+            array_push($QuestionList,"Placeholder");
             array_push($QuestionList,$post);
     }
 }
